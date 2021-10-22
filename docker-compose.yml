@@ -10,6 +10,7 @@ services:
 
         volumes:
             - ./workspace:/workspace
+            - ./README.md:/workspace/README.md
 
         ports:
             - 8000:18000

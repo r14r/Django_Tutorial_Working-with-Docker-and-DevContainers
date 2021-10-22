@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "**/.editorconfig": true,
+        "**/db.sqlite3": true
+    }
+}

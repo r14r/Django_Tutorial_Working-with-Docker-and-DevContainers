@@ -9,16 +9,17 @@ We use the DevContainer feature from Visual Studio Code to use a python environm
 ```
 $ django-admin  startproject main
 $ cd main
-$ mkdir -p apps{base,frontend,api}
-$ django-admin startapp base apps  
-appsapi/      appsbase/     appsfrontend/ 
-$ django-admin startapp base apps^C
-$ rm app*^C
-$ rm -rf apps*
+```
+
+```
 $ mkdir -p apps/{base,frontend,api}
-$ django-admin startapp base apps/base/
-$ django-admin startapp frontend apps/frontend/
-$ django-admin  startapp api apps/api/
+$ django-admin startapp base     apps/base
+$ django-admin startapp frontend apps/frontend
+$ django-admin startapp api      apps/api
+$ django-admin startapp polls    apps/polls
+```
+
+```
 $ python3 manage.py  migrate
 $ python3 manage.py  createsuperuser --username admin --email admin@via-internet.de
 

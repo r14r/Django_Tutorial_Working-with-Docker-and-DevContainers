@@ -1,6 +1,8 @@
+![](doc/header-image.png)
+
 # Tutorial: Create a Django App with VS Code and DevContainers
 
-This Repopsitopry contains a django app created by following the polls app tutorial fro the django documentation.
+This Repository contains a django app created by following the polls app tutorial fro the django documentation.
 
 We use the DevContainer feature from Visual Studio Code to use a python environment running in a docker container.
 

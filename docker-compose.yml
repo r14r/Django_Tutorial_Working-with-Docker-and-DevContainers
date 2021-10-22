@@ -10,6 +10,8 @@ services:
 
         volumes:
             - ./workspace:/workspace
+            
+            - ./doc:/workspace/doc
             - ./README.md:/workspace/README.md
 
         ports:

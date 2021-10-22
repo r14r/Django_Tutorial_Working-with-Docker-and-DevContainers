@@ -10,4 +10,5 @@ superuser:
 	python3 manage.py createsuperuser --username admin --email admin@via-internet.de
 
 run:
-	uvicorn main:app --reload --port 5000 --host 0.0.0.0
+	python3 manage.py runserver
+	

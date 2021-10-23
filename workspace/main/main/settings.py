@@ -4,7 +4,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-6@g_m+z3odmnl!cn^(l+j*8u9c_s@9&qnmd))gdj^2inmdqgsa'
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "0.0.0.0"
+]
 
 # Application definition
 
@@ -16,10 +18,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django_extensions',
+
+    'rest_framework',
+
     'apps.base.apps.BaseConfig',
     'apps.api.apps.ApiConfig',
     'apps.frontend.apps.FrontendConfig',
-    'apps.polls' # .apps.PollsConfig'
+    'apps.polls.apps.PollsConfig',
+
+    # 'tutorials.rest.apps.TutorialsRestConfig'
 ]
 
 MIDDLEWARE = [
@@ -63,6 +71,15 @@ DATABASES = {
     }
 }
 
+
+#
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
+    ]
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/dev/ref/settings/#auth-password-validators

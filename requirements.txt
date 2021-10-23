@@ -1,5 +1,8 @@
 django>=0.0.0a1
 djangorestframework
+django-extensions
+
+pytz
 
 uvicorn
 

@@ -13,9 +13,10 @@ services:
             
             - ./doc:/workspace/doc
             - ./README.md:/workspace/README.md
+            - ./requirements.txt:/workspace/requirements.txt
 
         ports:
-            - 8000:18000
+            - 8000:8000
 
         environment:
             - DJANGO_DEBUG=1

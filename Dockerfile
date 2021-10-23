@@ -23,7 +23,7 @@ RUN adduser user --uid 1000 --gid 1000 --home /home/user --disabled-password --g
 
 RUN echo '%work        ALL=(ALL)       NOPASSWD: ALL' >/etc/sudoers.d/work
 
-EXPOSE 5000
+EXPOSE 8000
 
 # PYTHONDONTWRITEBYTECODE: Prevents Python from writing pyc files to disc (equivalent to python -B option)
 # PYTHONUNBUFFERED:        Prevents Python from buffering stdout and stderr (equivalent to python -u option)
